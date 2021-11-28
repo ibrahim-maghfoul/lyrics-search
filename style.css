@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+/* button,
+input {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border: none;
+} */
+
+button:active {
+  transform: scale(0.95);
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+header {
+  background-image: url("https://images.unsplash.com/photo-1470770903676-69b98201ea1c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem 0;
+  position: relative;
+}
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+header * {
+  z-index: 1;
+}
+
+header h1 {
+  margin: 0 0 2rem;
+}
+
+form {
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+}
+
+form input {
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+form button {
+  border: none;
+  position: absolute;
+  padding: 0.86rem 2rem;
+  cursor: pointer;
+  top: 2px;
+  right: 2px;
+  background-color: #e056fd;
+  border: 0;
+  border-radius: 50px;
+  color: white;
+  font-size: 1rem;
+}
+
+.btn {
+  background-color: #8d56fd;
+  border: 0;
+  border-radius: 7px;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+ul.songs {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.songs li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.container {
+  margin: 2rem auto;
+  max-width: 100%;
+  width: 500px;
+}
+
+.container h2 {
+  font-weight: bold;
+}
+
+.container p {
+  text-align: center;
+}
+.centred {
+  display: flex;
+  justify-content: center;
+}
+.centred button {
+  transform: scale(1.3);
+  margin: 1rem;
+}
